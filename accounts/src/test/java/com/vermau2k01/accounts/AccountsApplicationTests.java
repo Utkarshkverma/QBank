@@ -1,10 +1,10 @@
-package com.vermau2k01.discoveryserver;
+package com.vermau2k01.accounts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryServerApplicationTests {
+class AccountsApplicationTests {
 
 	@Test
 	void contextLoads() {
