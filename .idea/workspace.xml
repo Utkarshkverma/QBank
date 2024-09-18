@@ -5,57 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22dfc778-d239-4694-adf8-651000045cec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/constant/AppConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/dto/AccountContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/dto/AccountContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/mapper/CustomerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/service/IAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/vermau2k01/accounts/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application-qa.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/CardsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/constant/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/constant/AppConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/controller/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/CardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/CardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/entity/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/repository/CardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/service/ICardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/service/ICardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/service/impl/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/vermau2k01/cards/service/impl/CardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/LoansApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/constants/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/constants/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/controller/LoanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/dto/LoanDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/dto/LoanDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/entity/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/entity/Loan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/mapper/LoanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/mapper/LoanMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/repository/LoanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/service/ILoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/service/ILoanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/service/impl/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/vermau2k01/loans/service/impl/LoanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2mEg4MH3F8znvXBlrVwvTLMfouG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -88,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Maven.accounts [clean].executor": "Run",
     "Maven.accounts [spring-boot:build-image].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -129,7 +80,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -161,12 +112,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.AccountsApplication" />
       <item itemvalue="Spring Boot.CardsApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.LoansApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -185,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726646958814</updated>
       <workItem from="1726646960640" duration="11946000" />
+      <workItem from="1726673086490" duration="2314000" />
     </task>
     <servers />
   </component>
