@@ -8,10 +8,9 @@
 		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.vermau2k01053</groupId>
+	<groupId>com.vermau2k01</groupId>
 	<artifactId>cards</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 	<name>cards</name>
 	<description>Spring boot microservices project</description>
 	<url/>
@@ -76,7 +75,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image><name>vermau2k01053/${project.artifactId}:s4</name></image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

@@ -1,6 +1,6 @@
 package com.vermau2k01.accounts.service.impl;
 
-import com.vermau2k01.accounts.constant.AppConstants;
+import com.vermau2k01.accounts.constants.AppConstants;
 import com.vermau2k01.accounts.dto.AccountDto;
 import com.vermau2k01.accounts.dto.CustomerDto;
 import com.vermau2k01.accounts.entity.Account;

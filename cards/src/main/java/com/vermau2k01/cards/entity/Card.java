@@ -1,3 +1,4 @@
+
 package com.vermau2k01.cards.entity;
 
 import jakarta.persistence.Entity;

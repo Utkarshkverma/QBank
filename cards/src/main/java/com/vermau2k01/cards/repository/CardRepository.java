@@ -1,3 +1,4 @@
+
 package com.vermau2k01.cards.repository;
 
 import com.vermau2k01.cards.entity.Card;

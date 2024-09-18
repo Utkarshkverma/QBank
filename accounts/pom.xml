@@ -8,10 +8,9 @@
 		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.vermau2k01</groupId>
+	<groupId>com.vermau2k01053</groupId>
 	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 	<name>accounts</name>
 	<description>Microservices for accounts</description>
 	<url/>
@@ -81,9 +80,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>
-						<name>vermau2k01053/${project.artifactId}:s6</name>
-					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

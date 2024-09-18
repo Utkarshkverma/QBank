@@ -1,3 +1,4 @@
+
 package com.vermau2k01.loans.constants;
 
 public class AppConstants {

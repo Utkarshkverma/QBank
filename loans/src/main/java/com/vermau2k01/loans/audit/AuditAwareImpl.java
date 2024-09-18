@@ -1,3 +1,4 @@
+
 package com.vermau2k01.loans.audit;
 
 import org.springframework.data.domain.AuditorAware;

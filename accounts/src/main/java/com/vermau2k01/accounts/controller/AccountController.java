@@ -1,6 +1,6 @@
 package com.vermau2k01.accounts.controller;
 
-import com.vermau2k01.accounts.constant.AppConstants;
+import com.vermau2k01.accounts.constants.AppConstants;
 import com.vermau2k01.accounts.dto.AccountContactInfoDto;
 import com.vermau2k01.accounts.dto.CustomerDto;
 import com.vermau2k01.accounts.dto.ErrorResponseDto;

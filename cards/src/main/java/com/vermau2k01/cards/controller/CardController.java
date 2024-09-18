@@ -1,3 +1,4 @@
+
 package com.vermau2k01.cards.controller;
 
 
@@ -83,8 +84,8 @@ public class CardController {
     })
     @GetMapping("/fetch")
     public ResponseEntity<CardDto> fetchCardDetails(@RequestParam
-                                                     @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                     String mobileNumber) {
+                                                    @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
+                                                    String mobileNumber) {
         CardDto cardsDto = cardService.fetchCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(cardsDto);
     }

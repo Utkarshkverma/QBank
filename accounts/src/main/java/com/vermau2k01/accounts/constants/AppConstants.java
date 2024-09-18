@@ -1,4 +1,4 @@
-package com.vermau2k01.accounts.constant;
+package com.vermau2k01.accounts.constants;
 
 public class AppConstants {
 

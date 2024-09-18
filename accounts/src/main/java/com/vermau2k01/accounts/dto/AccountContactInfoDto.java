@@ -1,5 +1,6 @@
 package com.vermau2k01.accounts.dto;
 
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;

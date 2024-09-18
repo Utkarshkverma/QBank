@@ -1,6 +1,5 @@
 package com.vermau2k01.loans.exception;
 
-
 import com.vermau2k01.loans.dto.ErrorResponseDto;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

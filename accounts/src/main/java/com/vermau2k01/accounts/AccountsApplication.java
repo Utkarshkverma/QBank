@@ -10,11 +10,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableConfigurationProperties(value = {AccountContactInfoDto.class})
-@EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Account microservice REST API documentation",
@@ -26,8 +24,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 						url = ""
 				),
 				license = @License(
-					name = "Apache 2.0",
-					url = ""
+						name = "Apache 2.0",
+						url = ""
 				)
 		),
 		externalDocs = @ExternalDocumentation(
@@ -36,9 +34,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 		)
 )
+@EnableJpaAuditing
 public class AccountsApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(AccountsApplication.class, args);
 	}
 

@@ -1,3 +1,4 @@
+
 package com.vermau2k01.cards.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;

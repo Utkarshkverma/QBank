@@ -79,8 +79,8 @@ public class LoanController {
     )
     @GetMapping("/fetch")
     public ResponseEntity<LoanDto> fetchLoanDetails(@RequestParam
-                                                     @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                     String mobileNumber) {
+                                                    @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
+                                                    String mobileNumber) {
         LoanDto loansDto = loanService.fetchLoan(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(loansDto);
     }

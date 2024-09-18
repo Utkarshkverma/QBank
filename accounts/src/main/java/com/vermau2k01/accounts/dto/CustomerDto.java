@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Schema(
-      name = "Customer",
+        name = "Customer",
         description = "Schema to hold the customer information"
 )
 public class CustomerDto {

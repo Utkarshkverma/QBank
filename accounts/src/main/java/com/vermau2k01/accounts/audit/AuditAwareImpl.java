@@ -9,9 +9,9 @@ import java.util.Optional;
 public class AuditAwareImpl implements AuditorAware<String> {
 
     /*
-    * Returns the current auditor of the application
-    * @Returns the current auditor
-    */
+     * Returns the current auditor of the application
+     * @Returns the current auditor
+     */
 
     @Override
     public Optional<String> getCurrentAuditor() {
