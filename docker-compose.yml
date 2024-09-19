@@ -27,7 +27,7 @@ services:
     image: "vermau2k01053/cards:s4"
     container_name: cards-ms
     ports:
-      - "8080:8080"
+      - "9000:9000"
     deploy:
       resources:
         limits:

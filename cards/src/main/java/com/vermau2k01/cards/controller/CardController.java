@@ -4,6 +4,7 @@ package com.vermau2k01.cards.controller;
 
 import com.vermau2k01.cards.constant.AppConstant;
 import com.vermau2k01.cards.dto.CardDto;
+import com.vermau2k01.cards.dto.CardsContactInfoDto;
 import com.vermau2k01.cards.dto.ErrorResponseDto;
 import com.vermau2k01.cards.dto.ResponseDto;
 import com.vermau2k01.cards.service.ICardService;
@@ -35,6 +36,7 @@ import org.springframework.web.bind.annotation.*;
 public class CardController {
 
     private final ICardService cardService;
+    private final CardsContactInfoDto cardsContactInfoDto;
 
 
     @Operation(
@@ -162,7 +164,30 @@ public class CardController {
         }
     }
 
-
+    @Operation(
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<CardsContactInfoDto> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(cardsContactInfoDto);
+    }
 
 
 }

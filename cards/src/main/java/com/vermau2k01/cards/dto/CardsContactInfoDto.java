@@ -1,4 +1,4 @@
-package com.vermau2k01.accounts.dto;
+package com.vermau2k01.cards.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,11 +7,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import java.util.List;
 import java.util.Map;
 
-
-@ConfigurationProperties(prefix = "accounts")
+@ConfigurationProperties(prefix = "cards")
 @Getter
 @Setter
-public class AccountContactInfoDto{
+public class CardsContactInfoDto {
 
     private String message;
     private Map<String, String> contactDetails;

@@ -3,6 +3,7 @@ package com.vermau2k01.loans.controller;
 import com.vermau2k01.loans.constants.AppConstants;
 import com.vermau2k01.loans.dto.ErrorResponseDto;
 import com.vermau2k01.loans.dto.LoanDto;
+import com.vermau2k01.loans.dto.LoansContactInfoDto;
 import com.vermau2k01.loans.dto.ResponseDto;
 import com.vermau2k01.loans.service.ILoanService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -29,6 +30,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoanController {
 
     private final ILoanService loanService;
+    private final LoansContactInfoDto loansContactInfoDto;
 
 
     @Operation(
@@ -159,5 +161,31 @@ public class LoanController {
                     .body(new ResponseDto(AppConstants.STATUS_417, AppConstants.MESSAGE_417_DELETE));
         }
 
+    }
+
+
+    @Operation(
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<LoansContactInfoDto> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(loansContactInfoDto);
     }
 }
