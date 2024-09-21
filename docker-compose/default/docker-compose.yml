@@ -1,0 +1,97 @@
+version: '3.8'  # Specify the Docker Compose file version
+
+services:
+  rabbit:  # RabbitMQ service for message brokering
+    image: rabbitmq:4.0.1-management  # Use RabbitMQ with management plugin
+    hostname: rabbitmq  # Set hostname for the service
+    ports:
+      - "5672:5672"  # Expose RabbitMQ AMQP port
+      - "15672:15672"  # Expose RabbitMQ management interface port
+    healthcheck:  # Health check configuration
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]  # Check if RabbitMQ is reachable
+      interval: 10s  # Check every 10 seconds
+      start_period: 5s  # Initial delay before starting health checks
+      retries: 10  # Retry up to 10 times before marking as unhealthy
+    networks:
+      - QBank  # Connect to the QBank network
+
+  configserver:  # Config server service
+    image: "vermau2k01053/config-server:s6"  # Use custom config server image
+    container_name: configserver-ms  # Name for the container
+    ports:
+      - "8071:8071"  # Expose config server port
+    depends_on:  # Ensure RabbitMQ is healthy before starting
+      rabbit:
+        condition: service_healthy  # Wait until RabbitMQ is healthy
+    healthcheck:  # Health check configuration
+      test: ["CMD", "curl", "--fail", "--silent", "localhost:8071/actuator/health/readiness"]  # Check health endpoint
+      interval: 10s  # Check every 10 seconds
+      start_period: 10s  # Initial delay before health checks start
+      retries: 10  # Retry up to 10 times
+    deploy:
+      resources:
+        limits:
+          memory: 700m  # Set memory limit for the container
+    networks:
+      - QBank  # Connect to the QBank network
+
+  accounts:  # Accounts microservice
+    image: "vermau2k01053/accounts:s6"  # Use custom accounts service image
+    container_name: accounts-ms  # Name for the container
+    ports:
+      - "8080:8080"  # Expose accounts service port
+    depends_on:  # Ensure config server is healthy before starting
+      configserver:
+        condition: service_healthy  # Wait until config server is healthy
+    deploy:
+      resources:
+        limits:
+          memory: 700m  # Set memory limit for the container
+    networks:
+      - QBank  # Connect to the QBank network
+    environment:
+      SPRING_APPLICATION_NAME: "accounts"  # Application name for Spring
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
+      SPRING_PROFILE_ACTIVE: default  # Active Spring profile
+
+  loans:  # Loans microservice
+    image: "vermau2k01053/loans:s6"  # Use custom loans service image
+    container_name: loans-ms  # Name for the container
+    ports:
+      - "8085:8085"  # Expose loans service port
+    depends_on:  # Ensure config server is healthy before starting
+      configserver:
+        condition: service_healthy  # Wait until config server is healthy
+    deploy:
+      resources:
+        limits:
+          memory: 700m  # Set memory limit for the container
+    networks:
+      - QBank  # Connect to the QBank network
+    environment:
+      SPRING_APPLICATION_NAME: "loans"  # Application name for Spring
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
+      SPRING_PROFILE_ACTIVE: default  # Active Spring profile
+
+  cards:  # Cards microservice
+    image: "vermau2k01053/cards:s6"  # Use custom cards service image
+    container_name: cards-ms  # Name for the container
+    ports:
+      - "9000:9000"  # Expose cards service port
+    depends_on:  # Ensure config server is healthy before starting
+      configserver:
+        condition: service_healthy  # Wait until config server is healthy
+    deploy:
+      resources:
+        limits:
+          memory: 700m  # Set memory limit for the container
+    networks:
+      - QBank  # Connect to the QBank network
+    environment:
+      SPRING_APPLICATION_NAME: "cards"  # Application name for Spring
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
+      SPRING_PROFILE_ACTIVE: default  # Active Spring profile
+
+networks:
+  QBank:  # Define the network for all services
+    driver: "bridge"  # Use the bridge network driver
