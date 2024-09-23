@@ -52,7 +52,7 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "accounts"  # Application name for Spring
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
-      SPRING_PROFILES_ACTIVE: default  # Active Spring profile
+      SPRING_PROFILES_ACTIVE: prod  # Active Spring profile
 
   loans:  # Loans microservice
     image: "vermau2k01053/loans:s6"  # Use custom loans service image
@@ -71,7 +71,7 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "loans"  # Application name for Spring
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
-      SPRING_PROFILES_ACTIVE: default  # Active Spring profile
+      SPRING_PROFILES_ACTIVE: prod  # Active Spring profile
 
   cards:  # Cards microservice
     image: "vermau2k01053/cards:s6"  # Use custom cards service image
@@ -90,7 +90,7 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "cards"  # Application name for Spring
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"  # Config server URL
-      SPRING_PROFILES_ACTIVE: default  # Active Spring profile
+      SPRING_PROFILES_ACTIVE: prod  # Active Spring profile
 
 networks:
   QBank:  # Define the network for all services

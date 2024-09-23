@@ -33,8 +33,8 @@ import org.springframework.web.bind.annotation.*;
 )
 public class AccountController {
 
-    @Value("${build.version}")
-    private String buildVersion;
+    //@Value("${build.version}")
+    private String buildVersion = "2.2";
 
     private final IAccountService accountService;
     private final Environment environment;

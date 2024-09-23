@@ -36,14 +36,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-monitor</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
@@ -79,7 +73,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>vermau2k01053/${project.artifactId}:s6</image>
+						<image>vermau2k01053/${project.artifactId}:s7</image>
 					</to>
 				</configuration>
 			</plugin>
